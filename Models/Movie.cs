@@ -10,14 +10,14 @@ public class Movie
     public string? Title { get; set; } = string.Empty;
     [DataType(DataType.Date)]
     public DateTime ReleaseDate { get; set; } = DateTime.Today;
-    public string? Genre { get; set; } = string.Empty;
+    public GenreMovie Genre { get; set; } = GenreMovie.comique;
     public decimal Price { get; set; } = 0;
     
     public Movie()
     {
     }
 
-    public Movie(int id_film, string title_film, DateTime releasedate_film, string genre_film, decimal price_film)
+    public Movie(int id_film, string title_film, DateTime releasedate_film, GenreMovie genre_film, decimal price_film)
     {
         id_film = Id;
         title_film = Title;
