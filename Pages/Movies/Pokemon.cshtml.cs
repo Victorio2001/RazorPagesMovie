@@ -21,6 +21,6 @@ public class ModelPokemon : PageModel
     
     public void OnGet()
     {
-        
+        var pok = new Movie();
     }
 }
