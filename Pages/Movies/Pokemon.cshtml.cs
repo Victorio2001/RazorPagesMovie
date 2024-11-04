@@ -19,8 +19,16 @@ public class ModelPokemon : PageModel
         _context = context;
     }
     
+    public Movie Film { get; set; }
+    
     public void OnGet()
     {
-        var pok = new Movie();
+        var Film = new Movie(
+            id_film: 1,
+            title_film: "Spiderman",
+            releasedate_film: System.DateTime.Now, 
+            genre_film: GenreMovie.comique,
+            price_film: 10
+            );
     }
 }

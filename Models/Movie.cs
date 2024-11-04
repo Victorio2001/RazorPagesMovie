@@ -16,7 +16,15 @@ public class Movie
     public Movie()
     {
     }
-
+    
+    /// <summary>
+    /// Constructeur Classe Movie
+    /// </summary>
+    /// <param name="id_film"></param>
+    /// <param name="title_film"></param>
+    /// <param name="releasedate_film"></param>
+    /// <param name="genre_film"></param>
+    /// <param name="price_film"></param>
     public Movie(int id_film, string title_film, DateTime releasedate_film, GenreMovie genre_film, decimal price_film)
     {
         id_film = Id;

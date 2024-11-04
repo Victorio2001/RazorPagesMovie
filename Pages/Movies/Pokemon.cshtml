@@ -9,6 +9,9 @@ ViewData["Title"] = "Index";
 <h1>Pokemon</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a class="" asp-page="Create">@Html.DisplayFor(model => Model.Film.ReleaseDate)</a>
 </p>
+
+<h1> @Html.DisplayFor(model => Model.Film.Title)</h1>
+
 
