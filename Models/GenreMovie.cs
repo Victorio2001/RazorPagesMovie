@@ -1,6 +1,6 @@
 ﻿namespace RazorPagesMovie.Models;
 /// <summary>
-/// horreur, comique, fantasy, thriller, 
+/// Utilisation Enum 
 /// </summary>
 public enum GenreMovie
 {

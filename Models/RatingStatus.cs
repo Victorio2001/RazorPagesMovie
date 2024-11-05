@@ -8,5 +8,6 @@ public class RatingStatus
     public static RatingStatus Excellent = new RatingStatus() {Id_Rating = 3, Comment_Rating = "Excellent"};
     
     public int Id_Rating { get; set; } = 0;
+
     public string Comment_Rating { get; set; } = string.Empty;
 }

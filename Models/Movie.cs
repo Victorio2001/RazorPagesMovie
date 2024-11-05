@@ -7,6 +7,7 @@ namespace RazorPagesMovie.Models;
 public class Movie
 {
     public int Id { get; set; }
+    public Acteur Acteur { get; set; } = new Acteur(1, "Ruiz");
     public string? Title { get; set; } = string.Empty;
     [DataType(DataType.Date)]
     public DateTime ReleaseDate { get; set; } = DateTime.Today;
