@@ -11,6 +11,7 @@ public class Movie
     [DataType(DataType.Date)]
     public DateTime ReleaseDate { get; set; } = DateTime.Today;
     public GenreMovie Genre { get; set; } = GenreMovie.comique;
+    public RatingStatus Rate { get; set; } = RatingStatus.Moyen;
     public decimal Price { get; set; } = 0;
     
     public Movie()
@@ -25,12 +26,14 @@ public class Movie
     /// <param name="releasedate_film"></param>
     /// <param name="genre_film"></param>
     /// <param name="price_film"></param>
-    public Movie(int id_film, string title_film, DateTime releasedate_film, GenreMovie genre_film, decimal price_film)
+    /// <param name="rate_film"></param>
+    public Movie(int id_film, string title_film, DateTime releasedate_film, GenreMovie genre_film, decimal price_film, RatingStatus rate_film)
     {
         id_film = Id;
         title_film = Title;
         releasedate_film = ReleaseDate;
         genre_film = Genre;
+        rate_film = Rate;
         price_film = Price;
     }
 }
